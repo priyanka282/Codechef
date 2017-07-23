@@ -1,0 +1,22 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+         string[] sDATA = Console.ReadLine().Split();
+        int x = int.Parse(sDATA[0]);
+        float y = float.Parse(sDATA[1]);
+
+        if((x+0.5<y) && x%5==0)
+        {
+            Console.WriteLine(string.Format("{0:f2}", y-x-.5 ));
+        }
+        else
+        {
+            Console.WriteLine(string.Format("{0:f2}", y ));
+        }
+    }
+}

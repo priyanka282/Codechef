@@ -1,0 +1,21 @@
+using System;
+namespace Test
+{
+    class Program
+    {
+        public static void Main()
+        {
+            string[] sDATA = Console.ReadLine().Split();
+            int x = int.Parse(sDATA[0]);
+            float y = float.Parse(sDATA[1]);
+            if (x % 5 == 0 && y > x + 0.5)
+            {
+                Console.WriteLine(string.Format("{0:0.00}", y - x - 0.5));
+            }
+            else
+            {
+                Console.WriteLine(string.Format("{0:0.00}", y));
+            }
+        }
+    }
+}

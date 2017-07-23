@@ -1,0 +1,20 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        int Total_Rows = Convert.ToInt32(Console.ReadLine());
+
+        for(int i=0 ; i<Total_Rows; i++)
+        {
+            string[] sDATA = Console.ReadLine().Split();
+            int num1 =  Convert.ToInt32(sDATA[0]);
+            int num2 =  Convert.ToInt32(sDATA[1]);
+            Console.WriteLine(num1+num2);
+        }
+
+    }
+}

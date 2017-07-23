@@ -1,0 +1,32 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int Total_Rows = Convert.ToInt32(Console.ReadLine());
+
+        for(int i=0 ; i<Total_Rows; i++)
+        {
+            int sysData = Convert.ToInt32(Console.ReadLine());
+            int total =0;
+            int temp;
+            temp=sysData;
+
+ //           While(temp>0)
+ //           {
+//                total = total + (temp % 10);
+//                temp = temp/10;
+//            }
+
+            do
+            {
+             total = total + (temp % 10);
+             temp = temp/10;
+            } while(temp>0);
+
+            Console.WriteLine(total);
+        }
+    }
+}
